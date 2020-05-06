@@ -1,0 +1,22 @@
+{
+	"name": "com.aria.unity.socialconnector",
+	"version": "1.0.0",
+	"unity": "2019.1",
+	"displayName": "SocialConnector",
+	"description": "integrated various sns.",
+	"category": "SNS",
+	"keywords": ["SNS"],
+	"dependencies": {
+	},
+	"samples": [
+		{
+			"displayName": "Sample",
+			"description": "sample assets.",
+			"path": ".Samples"
+		}
+	],
+	"author": {
+		"name": "tkaria",
+		"url": "https://tk3118.hatenablog.com"
+	}
+}
