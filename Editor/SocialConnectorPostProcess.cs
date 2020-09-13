@@ -2,9 +2,12 @@
 using UnityEditor.Callbacks;
 using UnityEditor;
 using System.IO;
-using UnityEditor.iOS.Xcode;
 using System.Linq;
 using System.Collections.Generic;
+#if UNITY_IOS
+using UnityEditor.iOS.Xcode;
+#endif
+
 namespace SocialConnector
 {
 	public class SocialConnectorPostProcess
@@ -23,6 +26,7 @@ namespace SocialConnector
 
 		static void AddLanguage (string path, params string[] languages)
 		{
+#if UNITY_IOS
 			var plistPath = Path.Combine (path, "Info.plist");
 			var plist = new PlistDocument ();
 
@@ -45,9 +49,12 @@ namespace SocialConnector
 			}
 			
 			plist.WriteToFile (plistPath);
+#endif
 		}
 
-		static void AddPermissions(string path , params KeyValuePair<string,string>[] permissions){
+		static void AddPermissions(string path , params KeyValuePair<string,string>[] permissions)
+		{
+#if UNITY_IOS
 			var plistPath = Path.Combine (path, "Info.plist");
 			var plist = new PlistDocument ();
 
@@ -66,6 +73,7 @@ namespace SocialConnector
 			}
 
 			plist.WriteToFile (plistPath);
+#endif
 		}
 	}
 }
