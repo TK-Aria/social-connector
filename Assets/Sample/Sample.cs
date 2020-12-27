@@ -12,6 +12,7 @@ namespace SocialConnector
 
 		void OnGUI ()
 		{
+
 			if (GUILayout.Button ("<size=30><b>Take</b></size>", GUILayout.Height (60))) {
 				ScreenCapture.CaptureScreenshot ("image.png");
 			}

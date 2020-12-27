@@ -1,7 +1,7 @@
 {
-	"name": "com.aria.unity.socialconnector",
+	"name": "com.ariasdk.u3d-socialconnector",
 	"version": "1.0.0",
-	"unity": "2019.1",
+	"unity": "2018.3",
 	"displayName": "SocialConnector",
 	"description": "integrated various sns.",
 	"category": "SNS",
@@ -11,8 +11,8 @@
 	"samples": [
 		{
 			"displayName": "Sample",
-			"description": "sample assets.",
-			"path": ".Samples"
+			"description": "sample scene",
+			"path": "https://github.com/tk-aria/u3d-social-connector/Assets/Sample"
 		}
 	],
 	"author": {
